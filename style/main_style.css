@@ -338,4 +338,10 @@ margin-top: 10px;
     .feature_right > p{
         font-size: 14px;
     }
+   .last{
+    height: auto;
+   }
+    .last>h3{
+        padding-top: 10px;
+    }
 }

@@ -1,4 +1,152 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_head {
+    width: 95%;
+    height: 100vh;
+    /* background-color: aqua; */
+    margin: 0px auto;
+}
+
+.head_box1 {
+    width: 100%;
+    height: 15vh;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1_left>h3 {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.head_ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.head_ul>li {
+    margin-left: 25px;
+}
+
+.head_ul>li:hover {
+    text-decoration: underline;
+    color: #ffb6c1;
+    cursor: pointer;
+}
+
+.head_banner {
+    width: 100%;
+    height: 85vh;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head_banner_para{
+    width: 47%;
+    height: auto;
+    padding-left: 100px;
+}
+
+.main_heading {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.main_para {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.main_btn{
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 41px;
+    margin-top: 30px;
+    background-color: pink;
+    color: white;
+}
+
+.main_btn:hover{
+    background-color: white;
+    color: #ffb6c1;
+    cursor: pointer;
+}
+
+.haed_banner_img{
+    width: 47%;
+    height: 500px;
+    /* background-color: chartreuse; */
+    border-radius: 50%;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.haed_banner_img > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width : 576px) {
+    .head_box1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_head{
+        height: auto;
+    }
+
+    .box1_right {
+        display: none;
+    }
+
+    .head_banner{
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .head_banner_para{
+        padding-left: 0px;
+    }
+    .haed_banner_img{
+        margin-top: 60px;
+        height: auto;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .head_banner_para{
+        padding-left: 0px;
+    }
+    .main_heading{
+        font-size: 30px;
+    }
+    .head_banner_para{
+        width: 100%;
+        height: auto;
+    }
 }
